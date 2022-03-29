@@ -1,0 +1,154 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9FAFB;
+}
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1280) {
+        max-width: 1279.98px;
+    }
+
+    @media (max-width: $breakpoint1024) {
+        max-width: 1023.98px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 767.98px;
+    }
+
+    @media (max-width: $breakpoint620) {
+        max-width: 619.98px;
+    }
+
+    @media (max-width: $breakpoint320) {
+        max-width: 319.98px;
+    }
+}
+
+// Body Locked
+body {
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    @media (max-width: $breakpoint1280) {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+    @media (max-width: $breakpoint1024) {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    @media (max-width: $breakpoint768) {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    @media (max-width: $breakpoint620) {
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 22px;
+    }
+    @media (max-width: $breakpoint320) {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+//Item Title
+.item__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+}
+//Icon
+.arrow__down {
+    cursor: pointer;
+}
+//Divider
+.divider {
+    background-color: #EAECF0;
+    height: 1px;
+}
+//Sale
+.sale {
+    display: none;
+    background: #669F2A;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    &.sale__block {
+        display: block;
+    }
+}
+//Custom input 
+.custom-input {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    height: 44px;
+    padding: 0 18px;
+    .input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101828;
+        &::placeholder {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #98A2B3;
+        }
+    }
+}
+//Custom button
+.custom-button {
+    // display: flex;
+    height: 44px;
+    border-radius: 8px;
+    padding: 0 18px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+}
+
+.icon-search {
+    background: none;
+}

@@ -1,0 +1,100 @@
+// Header
+header {
+    box-shadow: 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
+    background: #FFFFFF;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+
+    @media (max-width: $breakpoint768) {
+        padding: 16px 0;
+        justify-content: center;
+    }
+    //Banner
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        color: #ffff;
+        background: #7F56D9;
+        margin: 8px 8px 0 8px;
+        padding: 8px 24px;
+        border-radius: 4px;
+        @media (max-width: $breakpoint768) {
+            padding: 8px;
+        }
+    }
+    &__top-text {
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0 10px;
+        @media (max-width: $breakpoint1024) {
+            font-size: 14px;
+        }
+    }
+    //Header
+    &__location {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 8px;
+        }
+        @media (max-width: $breakpoint768) {
+            display: none;
+        }
+    }
+    &__location-text {
+        color: #667085;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+        &:hover {
+            color: #7F56D9;
+        }
+    }
+    //Tabs
+    &__tab {
+        display: flex;
+        @media (max-width: $breakpoint768) {
+            display: none;
+        }
+        :not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+//Navbar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101828;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+        &:hover {
+            color: #7F56D9;
+        }
+    }
+    @media (max-width: $breakpoint768) {
+        display: none;
+    }
+
+}
+
+//divider 
+.divider-header {
+    @media (max-width: $breakpoint768) {
+        display: none;
+    }
+}
+

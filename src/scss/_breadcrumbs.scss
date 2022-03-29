@@ -1,0 +1,26 @@
+// Breadcrumbs
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 0;
+    @media (max-width: $breakpoint1024) {
+        padding: 32px 0 0 0;
+    }
+    @media (max-width: $breakpoint320) {
+        padding: 20px 0 0 0;
+    }
+    a {
+        color: #667085;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+        &:hover {
+            color: #D0D5DD;
+        }
+    }
+    svg {
+        margin: 0 10px;
+        fill:#D0D5DD;
+    }
+    .active {
+        color: #D0D5DD;
+    }
+}

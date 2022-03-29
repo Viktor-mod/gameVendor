@@ -1,0 +1,83 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 8px 0;
+    @media (max-width: $breakpoint620) {
+        display: none;
+    }
+    .pagination-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        width: 36px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+        &.disabled {
+            svg path {
+                fill: #D0D5DD;
+            }
+        }
+        &:hover {
+            background: #F9F5FF;
+            svg path{
+                fill: #7F56D9;
+            }
+        }
+    }
+    .pagination-item {
+        display: inline-flex;
+        margin: 0 10px;
+        :not(:last-child) {
+            margin-right: 8px;
+        }
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 36px;
+            width: 36px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+            cursor: pointer;
+            &.active {
+                background: #7F56D9;
+                border: 1px solid #7F56D9;
+                border-radius: 8px;
+                color: #FFFFFF;
+            }
+            &:hover {
+                background: #F9F5FF;
+                color: #7F56D9;
+            }
+        }
+    }
+}
+
+.pagination-button {
+    display: none;
+    @media (max-width: $breakpoint620) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101828;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s background-color;
+    }
+    &:hover {
+        background: #e7e6e6;
+    }
+}

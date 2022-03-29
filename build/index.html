@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gameVendor</title>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <header>
+    <!-- Banner -->
+    <div class="header__top">
+        <svg style="width: 6px; height: 10px; fill: #9E77ED;">
+            <use xlink:href="../img/sprite.svg#arrow-prev">
+        </svg>
+        <p class="header__top-text">Refer a friend and get $10 off! 🔥 Offer ends February 27!</p>
+        <svg style="width: 6px; height: 10px; fill: #FFFFFF;">
+            <use xlink:href="../img/sprite.svg#arrow-next">
+        </svg>
+    </div>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header__location">
+                <svg style="width: 20px; height: 20px; fill: #101828;">
+                    <use xlink:href="../img/sprite.svg#location">
+                </svg>
+                <a href="#" class="header__location-text">Dublin, Republic of Ireland</a>
+            </div>
+            <img src="../img/Logo.svg" alt="logo">
+            <ul class="header__tab">
+                <li class="header__tab-link">
+                    <button class="icon-search">
+                        <svg style="width: 18px; height: 18px; fill: #101828;">
+                            <use xlink:href="../img/sprite.svg#search">
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__tab-link">
+                    <a href="#">
+                        <svg style="width: 16px; height: 18px; fill: #101828;">
+                            <use xlink:href="../img/sprite.svg#user">
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__tab-link">
+                    <a href="#">
+                        <svg style="width: 20px; height: 18px; fill: #101828;">
+                            <use xlink:href="../img/sprite.svg#cart">
+                        </svg>
+                    </a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="divider divider-header"></div>
+        <!-- Navbar -->
+    <div class="container">
+        <ul class="navbar">
+            <li><a href="#" class="navbar__link" data-scroll>Browse</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Discover</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Store</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Platforms</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Releases</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Mobile</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Articles</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Blog</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>News</a></li>
+            <li><a href="#" class="navbar__link" data-scroll>Contacts</a></li>
+        </ul>
+    </div>
+</header>
+
+    <!-- Main Page -->
+    <main>
+    <!-- Breadcrumbs -->
+    <section class="section__breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs">
+            <span class="item__title"><a href="#">Home</a></span>
+            <svg style="width: 5.2px; height: 8.4px;">
+                <use xlink:href="../img/sprite.svg#arrow-next">
+            </svg>
+            <span class="item__title"><a href="#">Discover</a></span>
+            <svg style="width: 5.2px; height: 8.4px;">
+                <use xlink:href="../img/sprite.svg#arrow-next">
+            </svg>
+            <span class="item__title active">Games</span>
+        </div>
+    </div>
+</section>
+
+    <!-- Hero -->
+    <section class="section__hero">
+    <div class="container">
+        <div class="hero">
+            <h1 class="hero__title">Games</h1>
+            <div class="banner">
+                <div class="banner__item">
+                    <h2 class="banner__item-title">Refer a friends and get $10 off!</h2>
+                    <p class="banner__item-subtitle">Connect with friends. Refer a friend and unlock your $10 coupon! Offer ends February 27.</p>
+                    <button class="custom-button banner__item-button">Invite a friend</button>
+                </div>
+                <img class="banner__img" src="../img/banner-image.svg" alt="img">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Listing -->
+    <section class="section__filters">
+    <div class="container">
+        <div class="filters">
+            <div class="filters-item">
+                    <span class="item__title">Search for games</span>
+                    <div class="custom-input" id="search">
+                        <svg style="width: 16px; height: 16px;">
+                            <use xlink:href="../img/sprite.svg#search">
+                        </svg>
+                        <input class="input" type="text" name="search" placeholder="Search...">
+                    </div>
+            </div>
+            <div class="filters-item">
+                    <span class="item__title">Category</span>
+                    <div class="custom-input category">
+                        <ul class="category__name">
+                            <li class="name">Strategy
+                                <svg style="width: 12px; height: 12px;">
+                                    <use xlink:href="../img/sprite.svg#close">
+                                </svg>
+                            </li>
+                            <li class="name">RPG
+                                <svg style="width: 12px; height: 12px;">
+                                    <use xlink:href="../img/sprite.svg#close">
+                                </svg>
+                            </li>
+                            <li class="name">+3
+                                <svg style="width: 12px; height: 12px;">
+                                    <use xlink:href="../img/sprite.svg#close">
+                                </svg>
+                            </li>
+                        </ul>
+                        <svg class="arrow__down" style="width: 10px; height: 6px; fill:#101828">
+                            <use xlink:href="../img/sprite.svg#arrow-down">
+                        </svg>
+                    </div>
+            </div>
+            <div class="filters-item">
+                    <span class="item__title">Sort by</span>
+                    <div class="custom-input custom-select">
+                        <div class="custom-select__top">Popular</div>
+                        <svg class="arrow__down" style="width: 10px; height: 6px; fill:#101828">
+                            <use xlink:href="../img/sprite.svg#arrow-down">
+                        </svg>
+                        <div class="custom-select__dropdown">
+                            <ul class="custom-select__list">
+                                <li class="custom-select__item">Popular</li>
+                                <li class="custom-select__item">Coming soon</li>
+                                <li class="custom-select__item">New Release</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="filters-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 4.2C1.55817 4.2 1.2 4.55817 1.2 5C1.2 5.44183 1.55817 5.8 2 5.8V4.2ZM18 5.8C18.4418 5.8 18.8 5.44183 18.8 5C18.8 4.55817 18.4418 4.2 18 4.2V5.8ZM4.66667 9.2C4.22484 9.2 3.86667 9.55817 3.86667 10C3.86667 10.4418 4.22484 10.8 4.66667 10.8V9.2ZM15.3333 10.8C15.7752 10.8 16.1333 10.4418 16.1333 10C16.1333 9.55817 15.7752 9.2 15.3333 9.2V10.8ZM7.33333 14.2C6.89151 14.2 6.53333 14.5582 6.53333 15C6.53333 15.4418 6.89151 15.8 7.33333 15.8V14.2ZM12.6667 15.8C13.1085 15.8 13.4667 15.4418 13.4667 15C13.4667 14.5582 13.1085 14.2 12.6667 14.2V15.8ZM2 5.8H18V4.2H2V5.8ZM4.66667 10.8H15.3333V9.2H4.66667V10.8ZM7.33333 15.8H12.6667V14.2H7.33333V15.8Z" fill="#101828"/>
+                    </svg>
+                    <span class="filters-button__title">Filter</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tag Group -->
+    <section class="section__tag-group">
+    <div class="container">
+        <ul class="tag-group">
+            <li class="tag-group__name">Strategy
+                <svg style="width: 20px; height: 20px;">
+                    <use xlink:href="../img/sprite.svg#close">
+                </svg>
+            </li>
+            <li class="tag-group__name">RPG
+                <svg style="width: 20px; height: 20px;">
+                    <use xlink:href="../img/sprite.svg#close">
+                </svg>
+            </li>
+            <li class="tag-group__name">Action
+                <svg style="width: 20px; height: 20px;">
+                    <use xlink:href="../img/sprite.svg#close">
+                </svg>
+            </li>
+            <li class="tag-group__name">Shooter
+                <svg style="width: 20px; height: 20px;">
+                    <use xlink:href="../img/sprite.svg#close">
+                </svg>
+            </li>
+            <li class="tag-group__name">Clear all
+                <svg style="width: 20px; height: 20px;">
+                    <use xlink:href="../img/sprite.svg#close">
+                </svg>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Products -->
+    <section class="section__products">
+    <div class="container">
+        <div class="products">
+        </div>
+    </div>
+</section>
+
+    <!-- Pagination -->
+    <section class="section__pagination">
+    <div class="container">
+        <div class="pagination">
+            <div class="pagination-arrow disabled">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5L0.434315 4.43431C0.121895 4.74673 0.121895 5.25327 0.434315 5.56569L1 5ZM4.43431 9.56569C4.74673 9.87811 5.25327 9.87811 5.56569 9.56569C5.8781 9.25327 5.8781 8.74673 5.56569 8.43431L4.43431 9.56569ZM5.56569 1.56569C5.8781 1.25327 5.8781 0.746734 5.56569 0.434315C5.25327 0.121895 4.74673 0.121895 4.43431 0.434315L5.56569 1.56569ZM5.56569 8.43431L1.56569 4.43431L0.434315 5.56569L4.43431 9.56569L5.56569 8.43431ZM1.56569 5.56569L5.56569 1.56569L4.43431 0.434315L0.434315 4.43431L1.56569 5.56569Z" fill="#101828"/>
+                </svg>
+            </div>
+            <div class="pagination-item">
+                <span class="pagination-item__button active">1</span>
+                <span class="pagination-item__button">2</span>
+                <span class="pagination-item__button">3</span>
+                <span class="pagination-item__button">4</span>
+                <span class="pagination-item__button">5</span>
+                <span class="pagination-item__button">...</span>
+                <span class="pagination-item__button">99</span>
+            </div>
+            <div class="pagination-arrow">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 5L5.56569 5.56569C5.71571 5.41566 5.8 5.21217 5.8 5C5.8 4.78783 5.71571 4.58434 5.56569 4.43432L5 5ZM1.56569 0.434315C1.25327 0.121895 0.746735 0.121895 0.434315 0.434314C0.121896 0.746734 0.121896 1.25327 0.434315 1.56569L1.56569 0.434315ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434314 9.56569C0.746734 9.87811 1.25327 9.87811 1.56569 9.56569L0.434315 8.43431ZM0.434315 1.56569L4.43431 5.56569L5.56569 4.43432L1.56569 0.434315L0.434315 1.56569ZM4.43432 4.43431L0.434315 8.43431L1.56569 9.56569L5.56569 5.56569L4.43432 4.43431Z" fill="#101828"/>
+                </svg>
+            </div>
+        </div>
+        <div class="pagination-button">
+            Show more
+        </div>
+    </div>
+</section>
+
+
+    <!-- FAQ -->
+    <section class="section__faq">
+    <div class="container">
+        <div class="faq">
+            <h1 class="faq__title">Frequently asked questions</h1>
+            <h3 class="faq__subtitle">Everything you need to know about the games.</h3>
+            <!-- Accordion -->
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                        <div class="trigger__text">How does work?</div>
+                        <div class="trigger__img">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="accordion__item-content">
+                        <div class="content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis voluptatum dolorem eligendi expedita nam aut itaque ipsam sunt magnam vero architecto, veritatis, praesentium cumque. Et commodi eum a velit quaerat.</div>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                        <div class="trigger__text">What is a game?</div>
+                        <div class="trigger__img">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="accordion__item-content">
+                        <div class="content__text">
+                            <p>
+                                A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.
+                            </p>
+                            <ul class="text-list">
+                                <li class="text-list__item">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#7F56D9"/>
+                                    </svg>
+                                    motion sensing device,
+                                </li>
+                                <li class="text-list__item">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#7F56D9"/>
+                                    </svg>
+                                    controller,
+                                </li>
+                                <li class="text-list__item">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#7F56D9"/>
+                                    </svg>
+                                    keyboard,
+                                </li>
+                                <li class="text-list__item">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#7F56D9"/>
+                                    </svg>
+                                    joystick.
+                                </li>
+                            </ul>
+                            <h4 class="text-title">Visual feedback.</h4>
+                            <p>
+                                A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                        <div class="trigger__text">Is there a free trial available?</div>
+                        <div class="trigger__img">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="accordion__item-content">
+                        <div class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea mollitia perferendis, delectus ratione, molestias fuga tempora iste ab quidem iure nemo, est laudantium! Nemo molestias alias ad quisquam consectetur quas!</div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                        <div class="trigger__text">How does billing work?</div>
+                        <div class="trigger__img">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="accordion__item-content">
+                        <div class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea mollitia perferendis, delectus ratione, molestias fuga tempora iste ab quidem iure nemo, est laudantium! Nemo molestias alias ad quisquam consectetur quas!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__subscribe">
+                <div class="subscribe-title">
+                    <h3 class="subscribe-title__title">Join our newsletter</h3>
+                    <p class="subscribe-title__description">
+                        We’ll send you a nice letter one per week. No spam.
+                    </p>
+                </div>
+                <form action="" class="subscribe-form">
+                    <div class="custom-input subscribe-form__input">
+                        <input class="input" type="email" name="email" id="" placeholder="Enter email">
+                    </div>
+                    <button class="custom-button subscribe-form__button">Subscribe</button>
+                </form>
+            </div>
+            <div class="divider divider-footer"></div>
+            <div class="footer__row">
+                <ul class="row-column">
+                    <h4 class="row-column__title">Categories</h4>
+                    <li class="row-column__link">
+                        <a href="#">Strategy</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Action</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Shooter</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Card Game</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Simulator</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">RPG</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Multiplayer</a>
+                    </li>
+                </ul>
+                <ul class="row-column">
+                    <h4 class="row-column__title">Company</h4>
+                    <li class="row-column__link">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Press</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="row-column">
+                    <h4 class="row-column__title">Legal</h4>
+                    <li class="row-column__link">
+                        <a href="#">Terms</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Cookies</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Licenses</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="row-column">
+                    <h4 class="row-column__title">Legal</h4>
+                    <li class="row-column__link">
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">Dribbble</a>
+                    </li>
+                    <li class="row-column__link">
+                        <a href="#">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright-description">Copyright © GameVendor, 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Tab Bar -->
+    <section class="section__tab-bar">
+    <ul class="tab-bar">
+        <li class="tab-bar__item">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7921 5.608L13.5511 5.86098C13.6469 5.57351 13.5721 5.25658 13.3578 5.04232C13.1436 4.82805 12.8266 4.75323 12.5392 4.84905L12.7921 5.608ZM11.0961 10.696L11.3491 11.4549C11.588 11.3753 11.7755 11.1879 11.8551 10.949L11.0961 10.696ZM6.00815 12.392L5.2492 12.139C5.15338 12.4265 5.2282 12.7434 5.44246 12.9577C5.65673 13.172 5.97366 13.2468 6.26113 13.1509L6.00815 12.392ZM7.70415 7.304L7.45116 6.54505C7.21228 6.62468 7.02483 6.81213 6.9452 7.05102L7.70415 7.304ZM16.6001 9C16.6001 12.9765 13.3766 16.2 9.40015 16.2V17.8C14.2603 17.8 18.2001 13.8601 18.2001 9H16.6001ZM9.40015 16.2C5.4237 16.2 2.20015 12.9765 2.20015 9H0.600146C0.600146 13.8601 4.54004 17.8 9.40015 17.8V16.2ZM2.20015 9C2.20015 5.02355 5.4237 1.8 9.40015 1.8V0.2C4.54004 0.2 0.600146 4.13989 0.600146 9H2.20015ZM9.40015 1.8C13.3766 1.8 16.6001 5.02355 16.6001 9H18.2001C18.2001 4.13989 14.2603 0.2 9.40015 0.2V1.8ZM12.0332 5.35502L10.3372 10.443L11.8551 10.949L13.5511 5.86098L12.0332 5.35502ZM10.8432 9.93705L5.75516 11.6331L6.26113 13.1509L11.3491 11.4549L10.8432 9.93705ZM6.76709 12.645L8.46309 7.55698L6.9452 7.05102L5.2492 12.139L6.76709 12.645ZM7.95713 8.06295L13.0451 6.36695L12.5392 4.84905L7.45116 6.54505L7.95713 8.06295Z" fill="#101828"/>
+            </svg>
+            <a class="tab-bar__item-link" href="#">Home</a>
+        </li>
+        <li class="tab-bar__item">
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.800049 6.6L0.300293 5.97531C0.110521 6.12712 4.88162e-05 6.35697 4.88162e-05 6.6H0.800049ZM7.80005 1L8.2998 0.375305C8.00763 0.141565 7.59247 0.141565 7.30029 0.375305L7.80005 1ZM14.8 6.6H15.6C15.6 6.35697 15.4896 6.12712 15.2998 5.97531L14.8 6.6ZM0.800049 15.4H4.88162e-05H0.800049ZM4.66672 17C4.66672 17.4418 5.02489 17.8 5.46672 17.8C5.90854 17.8 6.26672 17.4418 6.26672 17H4.66672ZM5.46672 9V8.2C5.02489 8.2 4.66672 8.55817 4.66672 9H5.46672ZM10.1334 9H10.9334C10.9334 8.55817 10.5752 8.2 10.1334 8.2V9ZM9.33338 17C9.33338 17.4418 9.69155 17.8 10.1334 17.8C10.5752 17.8 10.9334 17.4418 10.9334 17H9.33338ZM1.2998 7.2247L8.2998 1.6247L7.30029 0.375305L0.300293 5.97531L1.2998 7.2247ZM7.30029 1.6247L14.3003 7.2247L15.2998 5.97531L8.2998 0.375305L7.30029 1.6247ZM14 6.6V15.4H15.6V6.6H14ZM14 15.4C14 15.6193 13.9151 15.8253 13.7708 15.9737L14.918 17.089C15.3572 16.6373 15.6 16.0294 15.6 15.4H14ZM13.7708 15.9737C13.6273 16.1214 13.4375 16.2 13.2445 16.2V17.8C13.8766 17.8 14.4781 17.5415 14.918 17.089L13.7708 15.9737ZM13.2445 16.2H2.3556V17.8H13.2445V16.2ZM2.3556 16.2C2.16261 16.2 1.9728 16.1214 1.82926 15.9737L0.682064 17.089C1.12197 17.5415 1.72348 17.8 2.3556 17.8V16.2ZM1.82926 15.9737C1.68497 15.8253 1.60005 15.6193 1.60005 15.4H4.88162e-05C4.88162e-05 16.0294 0.242905 16.6373 0.682064 17.089L1.82926 15.9737ZM1.60005 15.4V6.6H4.88162e-05V15.4H1.60005ZM6.26672 17V9H4.66672V17H6.26672ZM5.46672 9.8H10.1334V8.2H5.46672V9.8ZM9.33338 9V17H10.9334V9H9.33338Z" fill="#101828"/>
+            </svg>
+            <a class="tab-bar__item-link" href="#">Browse</a>
+        </li>
+        <li class="tab-bar__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4343 17.5657C16.7467 17.8781 17.2533 17.8781 17.5657 17.5657C17.8781 17.2533 17.8781 16.7467 17.5657 16.4343L16.4343 17.5657ZM13.699 12.5676C13.3866 12.2552 12.8801 12.2552 12.5676 12.5676C12.2552 12.8801 12.2552 13.3866 12.5676 13.699L13.699 12.5676ZM14.4222 8.11111C14.4222 11.5966 11.5966 14.4222 8.11111 14.4222V16.0222C12.4803 16.0222 16.0222 12.4803 16.0222 8.11111H14.4222ZM8.11111 14.4222C4.62558 14.4222 1.8 11.5966 1.8 8.11111H0.2C0.2 12.4803 3.74193 16.0222 8.11111 16.0222V14.4222ZM1.8 8.11111C1.8 4.62558 4.62558 1.8 8.11111 1.8V0.2C3.74193 0.2 0.2 3.74193 0.2 8.11111H1.8ZM8.11111 1.8C11.5966 1.8 14.4222 4.62558 14.4222 8.11111H16.0222C16.0222 3.74193 12.4803 0.2 8.11111 0.2V1.8ZM17.5657 16.4343L13.699 12.5676L12.5676 13.699L16.4343 17.5657L17.5657 16.4343Z" fill="#101828"/>
+            </svg>
+            <a class="tab-bar__item-link" href="#">Search</a>
+        </li>
+        <li class="tab-bar__item">
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2 17C14.2 17.4418 14.5582 17.8 15 17.8C15.4418 17.8 15.8 17.4418 15.8 17H14.2ZM11.5 11.6667V10.8667V11.6667ZM4.5 11.6667V10.8667V11.6667ZM1 15.2222H0.2H1ZM0.2 17C0.2 17.4418 0.558172 17.8 1 17.8C1.44183 17.8 1.8 17.4418 1.8 17H0.2ZM15.8 17V15.2222H14.2V17H15.8ZM15.8 15.2222C15.8 14.0711 15.35 12.9646 14.545 12.1469L13.4048 13.2693C13.9125 13.7851 14.2 14.4874 14.2 15.2222H15.8ZM14.545 12.1469C13.7396 11.3287 12.6445 10.8667 11.5 10.8667V12.4667C12.212 12.4667 12.8974 12.7539 13.4048 13.2693L14.545 12.1469ZM11.5 10.8667H4.5V12.4667H11.5V10.8667ZM4.5 10.8667C3.35547 10.8667 2.26041 11.3287 1.455 12.1469L2.59525 13.2693C3.1026 12.7539 3.78802 12.4667 4.5 12.4667V10.8667ZM1.455 12.1469C0.650023 12.9646 0.2 14.0711 0.2 15.2222H1.8C1.8 14.4874 2.08747 13.7851 2.59525 13.2693L1.455 12.1469ZM0.2 15.2222V17H1.8V15.2222H0.2ZM10.7 4.55556C10.7 6.08933 9.47934 7.31111 8 7.31111V8.91111C10.3867 8.91111 12.3 6.94914 12.3 4.55556H10.7ZM8 7.31111C6.52066 7.31111 5.3 6.08933 5.3 4.55556H3.7C3.7 6.94914 5.61334 8.91111 8 8.91111V7.31111ZM5.3 4.55556C5.3 3.02178 6.52066 1.8 8 1.8V0.2C5.61334 0.2 3.7 2.16197 3.7 4.55556H5.3ZM8 1.8C9.47934 1.8 10.7 3.02178 10.7 4.55556H12.3C12.3 2.16197 10.3867 0.2 8 0.2V1.8Z" fill="#101828"/>
+            </svg>    
+            <a class="tab-bar__item-link" href="#">Account</a>
+        </li>
+        <li class="tab-bar__item">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.2C0.558172 0.2 0.2 0.558172 0.2 1C0.2 1.44183 0.558172 1.8 1 1.8V0.2ZM4.27273 1L5.05357 0.825989C4.97205 0.460183 4.64751 0.2 4.27273 0.2V1ZM6.46545 10.8395L7.24981 10.6821C7.2487 10.6765 7.24753 10.671 7.2463 10.6655L6.46545 10.8395ZM8.10182 12.1429V11.3429C8.09676 11.3429 8.09171 11.3429 8.08665 11.343L8.10182 12.1429ZM16.0545 12.1429L16.0697 11.343C16.0647 11.3429 16.0596 11.3429 16.0545 11.3429V12.1429ZM17.6909 10.8395L16.9106 10.6632C16.9092 10.6694 16.9078 10.6757 16.9066 10.6821L17.6909 10.8395ZM19 5.04762L19.7803 5.22399C19.8339 4.98681 19.7767 4.73812 19.6249 4.54817C19.4731 4.35821 19.2432 4.24762 19 4.24762V5.04762ZM5.09091 4.24762C4.64908 4.24762 4.29091 4.60579 4.29091 5.04762C4.29091 5.48945 4.64908 5.84762 5.09091 5.84762V4.24762ZM7.56364 16.1905C7.56364 16.192 7.56349 16.1917 7.56374 16.1911C7.56374 16.1911 7.56318 16.1924 7.56133 16.1942C7.55947 16.196 7.55727 16.1975 7.55509 16.1984C7.55342 16.1991 7.55066 16.2 7.54545 16.2V17.8C8.43111 17.8 9.16364 17.0874 9.16364 16.1905H7.56364ZM7.54545 16.2C7.54025 16.2 7.53749 16.1991 7.53582 16.1984C7.53364 16.1975 7.53143 16.196 7.52958 16.1942C7.52773 16.1924 7.52717 16.1911 7.52717 16.1911C7.52742 16.1917 7.52727 16.192 7.52727 16.1905H5.92727C5.92727 17.0874 6.6598 17.8 7.54545 17.8V16.2ZM7.52727 16.1905C7.52727 16.1889 7.52742 16.1893 7.52717 16.1898C7.52717 16.1899 7.52773 16.1886 7.52958 16.1867C7.53143 16.1849 7.53364 16.1835 7.53582 16.1826C7.53749 16.1819 7.54025 16.181 7.54545 16.181V14.581C6.6598 14.581 5.92727 15.2936 5.92727 16.1905H7.52727ZM7.54545 16.181C7.55066 16.181 7.55342 16.1819 7.55509 16.1826C7.55727 16.1835 7.55948 16.1849 7.56133 16.1867C7.56318 16.1886 7.56374 16.1899 7.56374 16.1898C7.56349 16.1893 7.56364 16.1889 7.56364 16.1905H9.16364C9.16364 15.2936 8.43111 14.581 7.54545 14.581V16.181ZM16.5636 16.1905C16.5636 16.192 16.5635 16.1917 16.5637 16.1911C16.5637 16.1911 16.5632 16.1924 16.5613 16.1942C16.5595 16.196 16.5573 16.1975 16.5551 16.1984C16.5534 16.1991 16.5507 16.2 16.5455 16.2V17.8C17.4311 17.8 18.1636 17.0874 18.1636 16.1905H16.5636ZM16.5455 16.2C16.5403 16.2 16.5375 16.1991 16.5358 16.1984C16.5336 16.1975 16.5314 16.196 16.5296 16.1942C16.5277 16.1924 16.5272 16.1911 16.5272 16.1911C16.5274 16.1917 16.5273 16.192 16.5273 16.1905H14.9273C14.9273 17.0874 15.6598 17.8 16.5455 17.8V16.2ZM16.5273 16.1905C16.5273 16.1889 16.5274 16.1893 16.5272 16.1898C16.5272 16.1899 16.5277 16.1886 16.5296 16.1867C16.5314 16.1849 16.5336 16.1835 16.5358 16.1826C16.5375 16.1819 16.5403 16.181 16.5455 16.181V14.581C15.6598 14.581 14.9273 15.2936 14.9273 16.1905H16.5273ZM16.5455 16.181C16.5507 16.181 16.5534 16.1819 16.5551 16.1826C16.5573 16.1835 16.5595 16.1849 16.5613 16.1867C16.5632 16.1886 16.5637 16.1899 16.5637 16.1898C16.5635 16.1893 16.5636 16.1889 16.5636 16.1905H18.1636C18.1636 15.2936 17.4311 14.581 16.5455 14.581V16.181ZM1 1.8H4.27273V0.2H1V1.8ZM3.49188 1.17401L5.68461 11.0135L7.2463 10.6655L5.05357 0.825989L3.49188 1.17401ZM5.6811 10.997C5.79329 11.5558 6.10023 12.0561 6.54594 12.4111L7.54277 11.1595C7.39016 11.038 7.28725 10.8686 7.24981 10.6821L5.6811 10.997ZM6.54594 12.4111C6.99147 12.7659 7.54762 12.9535 8.11698 12.9427L8.08665 11.343C7.88807 11.3468 7.69556 11.2812 7.54277 11.1595L6.54594 12.4111ZM8.10182 12.9429H16.0545V11.3429H8.10182V12.9429ZM16.0394 12.9427C16.6087 12.9535 17.1649 12.7659 17.6104 12.4111L16.6136 11.1595C16.4608 11.2812 16.2683 11.3468 16.0697 11.343L16.0394 12.9427ZM17.6104 12.4111C18.0561 12.0561 18.3631 11.5558 18.4753 10.997L16.9066 10.6821C16.8691 10.8686 16.7662 11.038 16.6136 11.1595L17.6104 12.4111ZM18.4712 11.0159L19.7803 5.22399L18.2197 4.87125L16.9106 10.6632L18.4712 11.0159ZM19 4.24762H5.09091V5.84762H19V4.24762Z" fill="#101828"/>
+            </svg>
+            <a class="tab-bar__item-link" href="#">Cart</a>
+        </li>
+    </ul>
+</section>
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

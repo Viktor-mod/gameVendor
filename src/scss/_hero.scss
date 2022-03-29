@@ -1,0 +1,124 @@
+// Hero
+.hero {
+    padding: 32px 0 60px 0;
+    &__title {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 56px;
+        color: #101828;
+    }
+    @media (max-width: $breakpoint1024) {
+        padding: 20px 0 40px 0;
+    }
+    @media (max-width: $breakpoint320) {
+        padding: 16px 0 32px 0;
+        &__title {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/banner.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 16px;
+    padding-left: 72px;
+    max-width: 1216px;
+    height: 408px;
+    position: relative;
+    margin-top: 40px;
+    &__item {
+        color: #FFFFFF;
+        width: 22vw;
+    }
+    &__item-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    &__item-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 28px 0 32px;
+    }
+    &__item-button {
+        background: #FFFFFF;
+        border: 1px solid #101828;
+        color: #101828;
+        &:hover {
+            background: #E9D7FE;
+            color: #7F56D9;
+            border: 1px solid #7F56D9;
+        }
+    }
+    &__img {
+        max-width: 45.3vw;
+        bottom: 0;
+        position: absolute;
+        right: 10vw;
+    }
+
+    @media (max-width: $breakpoint1024) {
+        margin-top: 32px;
+        padding-left: 60px;
+        &__item {
+            width: 30vw;
+        }
+        &__img {
+            width: 59.5vw;
+            right: 3vw;
+        }
+    }
+    @media (max-width: $breakpoint768) {
+        padding-left: 40px;
+        height: 324px;
+        background-image: url(../img/banner768.svg);
+        &__item-title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__item-subtitle {
+            margin: 20px 0 32px;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    @media (max-width: $breakpoint620) {
+        background-image: url(../img/banner620.svg);
+        height: 448px;
+        padding: 32px;
+        align-items: baseline;
+        &__item {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+        }
+        &__item-title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &__item-subtitle {
+            flex: 1;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 16px 0 0 0;
+        }
+    }
+    @media (max-width: $breakpoint320) {
+        background-image: url(../img/banner320.svg);
+        margin-top: 20px;
+        box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.06), 0 12px 12px -4px rgba(16, 24, 40, 0.02);
+        &__item {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

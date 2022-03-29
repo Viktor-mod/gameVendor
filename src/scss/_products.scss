@@ -1,0 +1,155 @@
+//Products
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    padding: 40px 0 40px 0;
+    
+}
+.products-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 12px 12px 20px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    &__img {
+        object-fit: cover;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 20px 0 0 0;
+        padding: 0 12px;
+        .info-details {
+            flex: 1;
+            padding-bottom: 16px;
+            :not(:last-child) {
+                margin-bottom: 12px;
+            }
+            &__title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                a {
+                    color: #101828;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+            &__rating {
+                display: flex;
+                align-items: center;
+                .rating-stars {
+                    display: inline-flex;
+                    margin-right: 8px;
+                    margin-bottom: 0;
+                }
+                .rating-votes {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #475467;
+                    opacity: 0.6;
+                }
+            }
+            &__description {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #98A2B3;
+            }
+        }
+    }
+}
+
+//Badge
+//Action RPG
+.info-details__badge {
+    background: #F0F9FF;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 2px 8px;
+    //Multiplayer
+    &.badge-multiplayer {
+        background: #FFF1F3;
+        .badge-name__multiplayer {
+            color: #E31B53;
+        }
+    }
+    //Action
+    &.badge-action {
+        background: #FFFAEB;
+        .badge-name__action {
+            color: #DC6803;
+        }
+    }
+    //Shooter
+    &.badge-shooter {
+        background: #F9F5FF;
+        .badge-name__shooter {
+            color: #7F56D9;
+        }
+    }
+    //Card
+    &.badge-card {
+        background: #ECFDF3;
+        .badge-name__card {
+            color: #039855;
+        }
+    }
+    .badge-name {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #0086C9;
+        svg {
+            margin-right: 6px;
+            circle {
+                fill: currentColor;
+            }
+        }
+    }
+}
+//Price 
+.info-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0 0;
+    .price {
+        display: inline-flex;
+        &__old {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #101828;
+            margin-right: 8px;
+            &.price__none {
+                display: none;
+            }
+        }
+        &__new {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #101828;
+        }
+        
+    }
+}
+
+.invisible {
+    opacity: 0;
+}

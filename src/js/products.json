@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Saints Row",
+        "price__old": "$1,299",
+        "price__new": "$649",
+        "image": "../img/card/product1.svg"
+    },
+    {
+        "title": "Paladins",
+        "price__new": "Free",
+        "image": "../img/card/product2.svg"
+    },
+    {
+        "title": "Far Cry 6",
+        "price__old": "$1,299",
+        "price__new": "$649",
+        "image": "../img/card/product3.svg"
+    }
+]

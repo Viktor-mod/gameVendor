@@ -1,0 +1,32 @@
+//Tag group
+.tag-group {
+    display: inline-flex;
+    &__name {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        @media (max-width: $breakpoint620) {
+            &:nth-child(n + 3) {
+                display: none;
+            }
+        }
+        display: flex;
+        align-items: center;
+        background: #F9F5FF;
+        border-radius: 4px;
+        padding: 10px 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #7F56D9;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+        cursor: pointer;
+        svg {
+            margin-left: 8px;
+            fill: #7F56D9;
+        }
+        &:hover {
+            background: #E9D7FE;
+        }
+    }
+}
