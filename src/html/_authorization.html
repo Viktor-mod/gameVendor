@@ -1,0 +1,33 @@
+<section class="section__authorization">
+    <div class="container">
+        <form class="authorization">
+            <h1 class="authorization__title">Sign <span>in</span></h1>
+            <div class="authorization__form">
+                <div class="form-item">
+                    <span class="form-item__title" id="title-mail">E-mail</span>
+                    <div class="custom-input">
+                        <input class="input" type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="error error-email">Required field</div>
+                    <div class="error error-email__valid">E-mail is not valid</div>
+                </div>
+                <div class="form-item">
+                    <span class="form-item__title" id="title-password">Password</span>
+                    <div class="custom-input">
+                        <input class="input" type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="error error-password">Required field</div>
+                    <div class="error error-password__length">Password must contain at least 8 characters</div>
+                </div>
+                <div class="form-checkbox">
+                    <input class="custom-checkbox custom-checkbox__error" type="checkbox" id="checkbox-input" name="checkbox">
+                    <label for="checkbox-input">I agree with the privacy policy</label>
+                    <div class="error error-checkbox">Required field</div>
+                </div>
+            </div>
+            <div class="authorization__button">
+                <button class="custom-button" id="btn">Sign in</button>
+            </div>
+        </form>
+    </div>
+</section>

@@ -152,3 +152,45 @@ body {
 .icon-search {
     background: none;
 }
+//Custom checkbox
+.form-checkbox {
+    position: relative;
+    height: 47px;
+    .custom-checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        & + label {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            color: #101828;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 1px solid #D0D5DD;
+                border-radius: 7px;
+                margin-right: 8px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+                transition: .3s ease-in-out;
+            }
+        }
+        &:checked + label::before {
+            border-color: #7F56D9;
+            background-color: #7F56D9;
+            background-image: url(../img/check.svg);
+        }
+    }
+    & + label:hover::before {
+        border-color: #7F56D9;
+    }
+}

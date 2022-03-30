@@ -1,3 +1,81 @@
+'use sctrict'
+
+//Authorization
+function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const checkbox = document.getElementById('checkbox-input')
+const btn = document.getElementById('btn');
+const titleMail = document.getElementById('title-mail')
+const titlePassword = document.getElementById('title-password')
+const errorEmail = document.querySelector('.error-email');
+const errorPassword = document.querySelector('.error-password');
+const errorCheckbox = document.querySelector('.error-checkbox');
+const errorEmailValid = document.querySelector('.error-email__valid');
+const errorPasswordLength = document.querySelector('.error-password__length'); 
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    if (email.value == 0) {
+        errorEmail.style.display = 'block';
+        errorEmailValid.style.display = 'none';
+        email.classList.add('input-email__error');
+        titleMail.classList.add('title-mail__error');
+    } else if (!validateEmail(email.value)) {
+        errorEmailValid.style.display = 'block';
+        errorEmail.style.display = 'none';
+        email.classList.add('input-email__error');
+        titleMail.classList.add('title-mail__error');
+    } else if (validateEmail(email.value) && email.value !==0) {
+        errorEmailValid.style.display = 'none';
+        errorEmail.style.display = 'none';
+        email.classList.remove('input-email__error');
+        titleMail.classList.remove('title-mail__error');
+    }
+
+    if (password.value.trim().length < 1) {
+        errorPassword.style.display = 'block';
+        errorPasswordLength.style.display = 'none';
+        password.classList.add('input-password__error')
+        titlePassword.classList.add('title-password_error')
+    } else if (password.value.trim().length < 8) {
+        errorPasswordLength.style.display = 'block';
+        errorPassword.style.display = 'none';
+        password.classList.add('input-password__error');
+        titlePassword.classList.add('title-password__error');
+    } else {
+        errorPassword.style.display = 'none';
+        errorPasswordLength.style.display = 'none';
+        password.classList.remove('input-password__error');
+        titlePassword.classList.remove('title-password__error');
+    }
+
+    if (!checkbox.checked) {
+        errorCheckbox.style.display = 'block';
+    } else if (checkbox.checked) {
+        errorCheckbox.style.display = 'none';
+    }
+
+    if (!checkbox.checked) {
+        errorCheckbox.style.display = 'block'
+    } else if (checkbox.checked) {
+        errorCheckbox.style.display = 'none'
+    }
+
+    let obj = {}
+
+    if (validateEmail(email.value) && (checkbox.checked) && password.value.length >= 8) {
+        console.log(obj);
+        obj.email = email.value;
+        obj.password = password.value;
+    }
+})
+
 // Select
 const customSelect = document.querySelectorAll ('.custom-select');
 
